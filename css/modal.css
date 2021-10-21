@@ -1,0 +1,119 @@
+#fav-color h4 {
+    margin: 32px 0 18px;
+    font-size: calc(12px + 1.6vw);
+    /* 運算符號必須使用空格隔開 */
+    font-weight: 300;
+    padding: 0 2vw 2px;
+    border-bottom: 1px solid #222;
+}
+
+#fav-color #color-options {
+    width: 84%;
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fav-color #color-options h5 {
+    display: inline;
+    margin: 8px 0 12px;
+    font-size: calc(6px + 0.6vw);
+    font-weight: 500;
+}
+
+#fav-color #color-options .color-option {
+    margin: 0.4vw;
+    width: 6.2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fav-color #color-options .color-option:hover {
+    cursor: pointer;
+}
+
+#fav-color #color-options .color-preview {
+    /* Start ------- */
+    width: calc(16px + 1.7vw);
+    height: calc(16px + 1.7vw);
+
+    /* 正圓形: 設 100% 會重新計算，效果相當於設定 50% */
+    /* border-radius: 50%;     */
+
+    /* 正八邊形 */
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    /*End ----------*/
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fav-color #update-theme-button {
+    margin: 24px 0 20px;
+    padding: 10px 26px;
+    font-size: calc(8px + 0.6vw);
+    font-weight: 400;
+    border: 3px solid #222;
+}
+
+#fav-color #update-theme-button:hover {
+    color: white;
+    background-color: #222;
+}
+
+#fav-color #color-options .checkmark {
+    color: white;
+    font-size: 1.2vw;
+}
+
+#make-note h4{
+    margin: 32px 0 18px;
+    font-size: calc(16px + 1.6vw);
+    font-weight: 300;
+}
+
+#make-note #edit-post-it {
+    height: 340px;
+    width: 35vw;
+    font-size: 2.6vw;
+    padding: 14px;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+#make-note .post-it-button {
+    display: inline;
+    margin: 24px 0 20px;
+    padding: 10px 26px;
+    font-size: calc(12px + 0.6vw);
+    font-weight: 400;
+}
+
+#make-note #add-post-it {
+    border: 3px solid #222;
+}
+
+#make-note #add-post-it:hover {
+    color: white;
+    background-color: #222;
+}
+
+#make-note #delete-button {
+    border: 3px solid #D71C1F;
+    background-color: #D71C1F;
+    color: white;
+}
+
+#make-note #delete-button:hover {
+    background-color: white;
+    color: #D71C1F;
+}

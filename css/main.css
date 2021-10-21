@@ -1,0 +1,102 @@
+/* 引用字體 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    background-color: #FEFDFD;
+    display : flex;;
+    align-items: stretch;
+}
+
+.font {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.default-coursor {
+    cursor: default;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    outline: none;
+    margin: 0 auto;
+    border-radius: 500px;
+}
+
+.color {
+    background-color: #1B19CD;
+    color: #FEFDFD;
+}
+
+.border-color{
+    border-color:  #1B19CD;
+}
+
+.off-color {
+    color: #7c7EFB;
+}
+
+.background-text {
+    position: absolute;
+    opacity: 0.22;
+    font-size: 20vw;
+    margin: 0;
+    top: 50%;
+    left: 56%;
+    z-index: -1;
+
+    /* 需要查資料，找出translate 參數怎麼設定 */
+    transform: translate(-50%, -50%);
+}
+
+h4.background-text {
+    top: 62%;
+    font-size: 7vw;
+}
+
+/* 右欄月曆 */
+table {
+    margin: 14px auto;
+    padding: 7vh 0px;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid #9c9c9c;
+}
+
+.tooltip span {
+    display: none;
+}
+
+dialog {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: rgba(29, 29, 29, 0.85);
+    padding: 0;
+    position: fixed;
+}
+
+.popup {
+    /* static 和 relitave 類似，只是 static 不能使用 top,left,right,bottom 來調整間距 */
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50vw;
+    margin: 22vh auto 0;
+    background-color: #FEFDFD;
+    border-radius: 10px;
+}
+
+sup {
+    font-size: 50%;
+}

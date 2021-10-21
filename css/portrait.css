@@ -1,0 +1,130 @@
+/* 手機/平板 無滑鼠，所以 hover (滑鼠移過去) 在行動裝置上的效果會變成....點擊觸發 hover 
+    為了避免這種問題，將 hover 效果限定於只有使用非行動裝置時才會出現。
+*/
+@media (orientation: landscape) {
+    .tooltip:hover {
+        cursor: help;
+        position: relative;
+    }
+    
+    .tooltip:hover span {
+        display: block;
+    
+        font-size: 1vw;
+        padding: 6px;
+        white-space: pre-wrap;
+        width: 12vw;
+        z-index: 100;
+    
+        background-color: #EDEDED;
+        color:black;
+        border-radius: 6px;
+    
+        left: 2vw;
+        top: 4vw;
+        position: absolute;
+    }
+
+    #current-day-info {
+        clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+        /* clip-path: polygon(100% 0, 0 47%, 100% 100%, 0 100%, 100% 47%, 0 0); */
+    }
+
+}
+
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+
+    #current-day-info {
+        width: 100%;
+        min-height: initial;
+        height: 12vh;
+        padding: 1vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #current-day-info h2 {
+        font-size: 3vh;
+    }
+    #current-day-info h1 {
+        font-size: 4vh;
+    }
+    #current-day-info #app-name-landscape {
+        display: none;
+    }
+    #current-day-info #theme-landscape {
+        display: none;
+    }
+    #current-day-info .current-day-heading {
+        display: inline;
+        padding: 0;
+        margin: 0 4px;
+        /* font-size: 7vw; */
+    }  
+
+    /* 月曆右欄 */
+    #calendar {
+        width: 100%;
+        display: block;
+        margin-top: 3.6vh;
+    }
+    #calendar #app-name-portrait {
+        display: block;
+        /* margin: 0; */
+        font-size: 3.5vh;
+    }
+    #calendar h4 {
+        padding: 1.2vw 0 0.2vw;
+        font-size: 2.8vw;
+    }
+    #calendar h3 {
+        font-size: 3.8vw;
+        padding: 1.4vw 2vw 0.8vw;
+    }
+    #calendar .icon {
+        font-size: 2.9vw;
+    }
+    #calendar .weekday {
+        font-size: 2.5vw;
+    }
+    #calendar tbody td {
+        height: 9.8vw;
+        width: 9.8vw;
+        font-size: 1.6vw;
+        padding: 0.8vw;
+    }
+    #calendar img {
+        width: 7.4vw;
+        top: 0.7vw;
+    }
+    #calendar #theme-portrait {
+        display: block;
+        padding: 3vw 26.5vw;
+        font-size: 4vw;
+        margin-top: 2vh;
+        border: none;
+    } 
+
+    /* modal */
+    .popup { 
+        width: 75vw; 
+    } 
+    #fav-color #color-options .color-option { 
+        width: 12vw; 
+    } 
+    #fav-color #update-theme-button { 
+        padding: 6px 16px; border-width: 2px; 
+    } 
+    #fav-color #color-options .checkmark { 
+        font-size: 1.2vh 
+    }
+    #make-note #edit-post-it { 
+        width: 62vw; 
+        height: 24vh; 
+        font-size: 4vh; 
+    }
+}
