@@ -1,7 +1,7 @@
 ## 簡易行事曆 Calendar
 <img src="images/intro/home.png" alt="首頁" width="50%" />
 
-[線上展示](#)
+[線上展示](http://138.3.219.198/calendar/)
 
 ## 網站應用的技術
 * JavaScript 應用 : DOM 操作
