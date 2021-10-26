@@ -4,7 +4,7 @@
 [線上展示](http://158.101.92.228/calendar/)
 
 ## 網站應用的技術
-* JavaScript 應用 : DOM 操作
+* JavaScript 應用 : DOM 操作、Fetch 串接 API
 * CSS-RWD 應用 : [RWD-手機版面](#mobileView)
 * PHP 資料庫操作-CURD 應用: 
     * CRUD-Create : [新增記事](#addNote)
